@@ -14,7 +14,7 @@ class DeltaSensors:
     print("The best way it is:", way[best_sensor_data])
     return way[best_index]
     #starting
-delta = Delta_arrays()
+delta = DeltaTen()
 delta.DeltaTen()
     
     
