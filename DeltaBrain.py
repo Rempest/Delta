@@ -1,19 +1,20 @@
-from DeltaAnalyze as DeltaACT
+from DeltaAnalyze as DeltaED
 from DeltaTensors as DeltaSensors
 class DeltaBrain(self):
   def __init__(self):
-    self.brain = DeltaACT()
+    self.brain = DeltaED()
     self.sensor = DeltaSensors()
   def run(self)
-    print("Analyzing  photo..")
+     print("Analyzing  photo..")
     vision_ok = self.brain.DeltaACT()
     if not vision_ok:
+      print("The odject is failed...")
       return False
-  print("checking sensors..")
-  result = self.sensor.DeltaSensors()
+      print("checking sensors..")
+     result = self.sensor.DeltaSensors()
     if result == "STOP":
       print("Robot is stoped")
-    else
+    else:
       print("Robot is working", result)
 robot = DeltaBrain()
 robot.run()
