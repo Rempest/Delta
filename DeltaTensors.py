@@ -13,8 +13,5 @@ class DeltaSensors:
     way = ["Left", "Left-front", "Straight", "Right-front", "Right"]
     print("The best way it is:", way[best_sensor_data])
     return way[best_index]
-    #starting
-delta = DeltaTen()
-delta.DeltaTen()
-    
+
     
