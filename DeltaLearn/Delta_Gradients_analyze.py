@@ -1,8 +1,6 @@
 import numpy as np 
 class Newron():
-    def __init__(self, weight, bias, target, x,
-    learning_rate=0.1):
-        
+    def __init__(self, weight, bias, target, x, learning_rate=0.1):
         self.weight = weight
         self.x = x
         self.target = target
@@ -10,19 +8,22 @@ class Newron():
         self.learning_rate = learning_rate
         
         self.Vout = None
-        self.error = error
-        self.gradinet = gradinet
-        self.y = y
+        self.error = None
+        self.gradinet = None
+        self.y = None
         
-    def function_activation(self, sigmoid):
+    def activation(self, sigmoid):
         return 1/(1 + np.exp(-sigmoid))
         
     def operation(self):
         self.Vout = self.x * self.weight + self.bias
-        self.error =  self.function_activation - self.target
+        self.y = self.activation(self.Vout)
+        
+        self.error =  self.activation - self.target
         #f'(x) = f(x) * (1 - f(x))
         sigmoid_d = self.y * (1 - self.y)
         self.gradinet = self.error * sigmoid_d
+        
         return self.y, self.error, self.gradient
     
     input_x = np.array([5, 3, -5, 6, 2, 1, 8, 4, 9, 0])
@@ -35,4 +36,5 @@ class Newron():
     output, err, grad = newron1.operation
     print(f"Input of Newron: {output}")
     print(f"Error of Newron: {err}")
+    print(f"Gradients of Newron: {grad}")
     
