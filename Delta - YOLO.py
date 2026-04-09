@@ -1,3 +1,0 @@
-import ultralystics from YOLO
-
-
