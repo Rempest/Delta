@@ -8,10 +8,10 @@ class DeltaSensors:
     #the safe
     if min_sensor_data <= 1.0:
       print("STOP!")
-      return False
+      return "STOP!"
     best_sensor_data = np.argmax(sensor_data)
     way = ["Left", "Left-front", "Straight", "Right-front", "Right"]
     print("The best way it is:", way[best_sensor_data])
-    return way[best_index]
+    return way[best_sensor_data]
 
     
