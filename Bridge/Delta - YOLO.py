@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 # new class to the YOLO intergration
-class Delta_Vision:
+class Delta_YOLO:
   def __init__(self, model_path = 'yolov8n.pt'):
     self.model = YOLO(model_path)
 # detection an objest
