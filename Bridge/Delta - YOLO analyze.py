@@ -4,10 +4,12 @@ import cv2
 class DeltaAnalyze:
   def __init__(self, frame_width=640):
     self.frame_width = frame_width
+    #analyze a max detection and examination
   def select_target(self, detection):
     if not detecion:
       return None
       return max(detection, key=lambda d: (d[2]-d[0]) * (d[3]-d[1]))
+      #return a data 
   def get_snes_data(self, target):
     if target is None
     return None
