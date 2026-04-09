@@ -4,13 +4,13 @@ class DeltaED:
   #analyze a photo
    def DeltaACT(self):
      self.object = cv2.imread('image.jpg')
-     if (self.object == None):
+     if (self.object is None):
        print("Image not found!")
        return False
       #edit a photo
-     self.odject_resize = cv2.resize(self.object, (500, 500))
+     self.object_resize = cv2.resize(self.object, (500, 500))
      self.object_gray =  cv2.cvtColor(self.object_resize, cv2.COLOR_BGR2GRAY)
-     self.odject_blur =cv2.GaussianBlur(self.object_gray, (5, 5), 0)
+     self.object_blur =cv2.GaussianBlur(self.object_gray, (5, 5), 0)
      self.object_canny = cv2.Canny(self.object_blur, 100, 300)
      return True
      ##imshow a photo
