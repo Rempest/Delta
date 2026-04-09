@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-class DeltaED:
+class Delta_vision:
   #analyze a photo
    def DeltaACT(self):
      self.object = cv2.imread('image.jpg')
