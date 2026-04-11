@@ -6,15 +6,15 @@ class DeltaAnalyze:
     self.frame_width = frame_width
     #analyze a max detection and examination
   def select_target(self, detection):
-    if not detecion:
+    if not detection:
       return None
       return max(detection, key=lambda d: (d[2]-d[0]) * (d[3]-d[1]))
       #return a data 
   def get_snes_data(self, target):
-    if target is None
-    return None
+    if target is None:
+      return None
   x1, y1, x2, y2, conf, cls = target
-        return {
+      return {
             "cx":   (x1 + x2) // 2,
             "cy":   (y1 + y2) // 2,
             "size": (x2 - x1) * (y2 - y1),
