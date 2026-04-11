@@ -13,8 +13,8 @@ class Delta_YOLO:
       x1, y1, x2, y2 = map(int, box.xyxy[0])
       conf = float(box.conf[0])
       cls = int(box.cls[0])
-      self.detection.append(x1, y1, x2, y2, conf, cls)
-      return detecton
+      self.detection.append(x1, y1, x2, y2, conf, cls))
+    return detection
   # conditional if object is false
     def draw(self, frame, detection, target = None):
       for (x1, y1, x2, y2, conf, cls) in detection:
