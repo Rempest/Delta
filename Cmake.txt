@@ -1,0 +1,14 @@
+cmake_required(VERSION 3.10)
+project(DeltaPrime)
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+add_executable(DeltaPrime
+    src/main.cpp
+    src/PID.cpp
+    src/Dynamics.cpp
+    src/Planner.cpp
+    src/Sensors.cpp
+)
