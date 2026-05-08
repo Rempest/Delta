@@ -4,7 +4,7 @@ import cv2  # OpenCV library for computer vision (video capture, image display, 
 from Bridge.Delta_YOLO import Delta_YOLO              # Handles object detection (YOLO-based)
 from Bridge.Delta_YOLO_analyze import DeltaAnalyze    # Processes detections and extracts meaning
 from Bridge.Delta_decision import DeltaDecision       # Makes decisions based on analyzed data
-from Delta_Sensors import DeltaSensors                # Reads external sensor input (e.g., safety override)
+from Bridge.Delta_Sensors import DeltaSensors                # Reads external sensor input (e.g., safety override)
 
 
 class DeltaBrain:
