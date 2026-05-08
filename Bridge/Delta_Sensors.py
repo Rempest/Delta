@@ -3,7 +3,7 @@ import cv2
 class DeltaSensors:
   def DeltaTen(self):
     #data of the sensors
-    sensor_data = np.array([2.5, 2.9, 3.0, 1.9, 2.7])
+    sensor_data = np.array([])
     min_sensor_data = np.min(sensor_data)
     #the safe
     if min_sensor_data <= 1.0:
