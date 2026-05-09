@@ -3,10 +3,16 @@
 
 class Planner {
 public:
-    double target_x = 10.0;
+    explicit Planner(double target_x = 10.0, double gain = 0.5)
+        : target_x_(target_x), gain_(gain) {}
 
-    double computeTargetVelocity(State& state) {
-        double error = target_x - state.x;
-        return error * 0.5;
+    double computeTargetVelocity(const State& state) const {
+        return (target_x_ - state.x) * gain_;
     }
+
+    void setTarget(double x) { target_x_ = x; }
+
+private:
+    double target_x_;
+    double gain_;
 };
