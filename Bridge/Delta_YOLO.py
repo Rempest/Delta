@@ -1,5 +1,8 @@
 from ultralytics import YOLO
 import cv2
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Delta_YOLO:
     def __init__(self, model_path='yolov8n.pt'):
@@ -13,13 +16,13 @@ class Delta_YOLO:
             x1, y1, x2, y2 = map(int, box.xyxy[0])
             conf = float(box.conf[0])
             cls = int(box.cls[0])
-
             detections.append((x1, y1, x2, y2, conf, cls))
 
         return detections
 
     def draw(self, frame, detections, target=None):
-        for (x1, y1, x2, y2, conf, cls) in detections:
+        for det in detections:
+            x1, y1, x2, y2 = det[:4]
             cv2.rectangle(frame, (x1, y1), (x2, y2), (100, 100, 100), 1)
 
         if target:
