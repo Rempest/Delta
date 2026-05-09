@@ -1,0 +1,15 @@
+system:
+  dt: 0.1
+  steps: 100
+
+sensors:
+  safe_distance: 1.0
+  directions: ["Left", "Left-front", "Straight", "Right-front", "Right"]
+
+camera:
+  source: 0
+  frame_width: 640
+
+planner:
+  target_x: 10.0
+  gain: 0.5
