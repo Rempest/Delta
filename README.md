@@ -35,10 +35,10 @@ DeltaPrime/
 │   └── physics_bridge.py
 │
 ├── Physics/             # Physics and control layer (C++)
-│   ├── include/
-│   ├── src/
-│   ├── PID.cpp
-│   ├── Dynamics.cpp
+│   ├── 
+│   ├── main.cpp
+│   ├── PID.h
+│   ├── Dynamics.h
 │   ├── Planner.cpp
 │   └── Sensors.cpp
 │
