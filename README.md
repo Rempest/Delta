@@ -32,7 +32,7 @@ DeltaPrime/
 ├── Core/                # Central system logic (C++)
 │   ├── CmakeList.txt
 │   ├── Delta_core.py
-│   └── DeltaBrain.h
+│   └── physics_bridge.py
 │
 ├── Physics/             # Physics and control layer (C++)
 │   ├── include/
