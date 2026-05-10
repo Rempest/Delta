@@ -35,12 +35,13 @@ DeltaPrime/
 │   └── physics_bridge.py
 │
 ├── Physics/             # Physics and control layer (C++)
-│   ├── 
-│   ├── main.cpp
+│   ├── Cmakeist.txt
+│   ├── Distance.h
 │   ├── PID.h
 │   ├── Dynamics.h
-│   ├── Planner.cpp
-│   └── Sensors.cpp
+│   ├── Planner.h
+│   └── Sensors.h
+|   
 │
 ├── config/
 │   └── config.yaml
@@ -52,3 +53,5 @@ DeltaPrime/
 ├── requirements.txt
 ├── README.md
 └── LICENSE
+
+README is in development...
