@@ -30,8 +30,8 @@ DeltaPrime/
 │   └── Delta_brain.py
 │
 ├── Core/                # Central system logic (C++)
-│   ├── main.cpp
-│   ├── DeltaBrain.cpp
+│   ├── CmakeList.txt
+│   ├── Delta_core.py
 │   └── DeltaBrain.h
 │
 ├── Physics/             # Physics and control layer (C++)
