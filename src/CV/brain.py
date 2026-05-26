@@ -2,10 +2,10 @@ import cv2
 import logging
 import numpy as np
 
-from Bridge.Delta_YOLO import Delta_YOLO
-from Bridge.Delta_YOLO_analyze import DeltaAnalyze
-from Bridge.Delta_decision import DeltaDecision
-from Bridge.Delta_Sensors import DeltaSensors
+from CV.YOLO import Delta_YOLO
+from CV.YOLO_analyze import DeltaAnalyze
+from CV.decision import DeltaDecision
+from CV.sensors import DeltaSensors
 
 logger = logging.getLogger(__name__)
 
