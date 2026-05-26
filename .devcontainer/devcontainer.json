@@ -1,4 +1,13 @@
 {
-  "name": "Ubuntu Codespace",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04"
+  "name": "Delta AI - Drone",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
 }
